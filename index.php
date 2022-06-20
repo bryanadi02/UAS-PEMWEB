@@ -11,7 +11,7 @@ if (!file_exists(DB)) {
 <div class="container mt-3">
     <div class="row">
         <div class="col-md-12 mb-3">
-            <a href="insert.php" class="btn btn-success"><i class="fa-solid fa-plus"></i></a>
+            <a href="insert.php" class="btn btn-dark"><i class="fa-solid fa-plus"></i></a>
         </div>
         <?php
         $loadDB = @file(DB, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -36,9 +36,9 @@ if (!file_exists(DB)) {
                 </div>
                 <div class="card-footer">
                     <div class="float-end">
-                        <a class="btn btn-warning" href="edit.php?id=<?php echo $Id; ?>"><i
+                        <a class="btn btn-dark" href="edit.php?id=<?php echo $Id; ?>"><i
                                 class="fa-solid fa-pen"></i></a>
-                        <a href="#" class="btn btn-danger confirm" data-id="<?php echo $Id; ?>"
+                        <a href="#" class="btn btn-info confirm" data-id="<?php echo $Id; ?>"
                             data-nama="<?php echo $Nama; ?>"><i class="fa-solid fa-trash"></i></a>
                     </div>
                 </div>
